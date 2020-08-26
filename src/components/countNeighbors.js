@@ -20,14 +20,12 @@ const countNeighbors = (arr, row, col) => {
         arr[count((row + 1))][col],
         arr[count((row + 1))][count((col + 1))]
     ]
-
     let counter = 0
     neighbors.forEach(x => {
-        if (x.status) {
+        if (x.currentStatus) {
             counter++
         }
     })
     return counter
 }
-
 export default countNeighbors;

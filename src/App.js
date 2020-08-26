@@ -3,8 +3,10 @@ import './App.css';
 import newGrid from './components/newGrid'
 import Grid from './components/grid'
 import gameOfLife from './components/gameOfLife'
-
-const gridSize = 25
+import timeLine from './components/timeLine'
+import SpeedAdjust from './components/speedAdjust'
+import Popup from 'reactjs-popup'
+const gridSize = 28
 
 
 function App() {
@@ -14,12 +16,13 @@ function App() {
     isRunning: false,
     rate: 100
   })
-
-  function newGame(e) {
+  function random(e) {
     e.preventDefault()
     setGameGrid({ ...gameGrid, gameGridStatus: newGrid(), isRunning: false, generation: 0 })
   }
-
+  function changeRate(newRate) {
+    setGameGrid({ ...gameGrid, rate: newRate })
+  }
   function togglePause(e) {
     e.preventDefault()
     setGameGrid({ ...gameGrid, isRunning: !gameGrid.isRunning })
@@ -37,14 +40,47 @@ function App() {
       }), isRunning: false, generation: 0
     })
   }
-
+  timeLine(() => {
+    gameOfLife(gameGrid, setGameGrid, gridSize)
+  }, gameGrid.isRunning ? gameGrid.rate : null)
   return (
     <div className="App">
       <header className="App-header">
-        <div>Game Of Life</div>
-        <button onClick={newGame}>New Game</button>
-        <button onClick={togglePause}>{gameGrid.isRunning ? 'Pause' : 'Start'}</button>
-        <button onClick={clearGrid}>Clear Grid</button>
+        <h1>Game Of Life</h1>
+        <div id='controls'>
+          <Popup trigger={<button className="button"> Show Rules </button>} modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                 </a>
+                <div className="header"> Rules to Conway's Game Of Life </div>
+                <div className="content">
+                  <p>rules</p>
+                  <p>rules</p>
+                  <p>rules</p>
+                </div>
+                <div className="actions">
+                  <button
+                    className="button"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+            </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+          <button onClick={random}>Random Grid</button>
+          <button onClick={togglePause}>{gameGrid.isRunning ? 'Pause' : 'Start'}</button>
+          <button onClick={clearGrid}>Clear Grid</button>
+          <div id='speedAdjust'>
+            <SpeedAdjust rate={gameGrid.rate} onSpeedChange={changeRate} />
+            <h2>{'Faster <-------> Slower'}</h2>
+          </div>
+        </div>
         <Grid gameGrid={gameGrid} setGameGrid={setGameGrid} gridSize={gridSize} />
       </header>
     </div>

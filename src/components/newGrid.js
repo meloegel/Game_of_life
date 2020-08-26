@@ -1,4 +1,4 @@
-const gridSize = 25
+const gridSize = 28
 
 const newGrid = (cellStatus = () => {
     const cell = {
@@ -17,6 +17,4 @@ const newGrid = (cellStatus = () => {
     }
     return grid
 }
-
-
 export default newGrid;
