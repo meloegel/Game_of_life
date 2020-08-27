@@ -14,12 +14,13 @@
   border-radius: 2rem;
   background: lightgray;
   padding: 0.6rem;
-  margin-bottom: 1rem;
 }
 #speedAdjust {
   border: 0.125rem solid black;
   border-radius: 1rem;
   margin-bottom: 0 auto;
+  background: #282c34;
+  color: white;
 }
 h2 {
   font-size: 1.2rem;
@@ -39,16 +40,16 @@ button {
   font-size: 1rem;
   border-radius: 1rem;
   padding: 0.5rem;
-  height: 3rem;
+  height: 2.8rem;
+  background: #282c34;
+  color: white;
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1920px) {
+  #controls {
+    width: 100vh;
   }
 }
-.dead {
-  background: white;
-}
+
 .cell {
   width: 3%;
   margin: 0.5%;

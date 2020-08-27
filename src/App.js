@@ -107,7 +107,7 @@ function App() {
                  </a>
                 <div className="header"> Colors of Game of Life </div>
                 <div className="color-content">
-                  <p>The different colors represent the ammout of 'days' a cell has been alive</p>
+                  <p>The different colors represent the ammout of 'days/iterations' a cell has been alive</p>
                   <p>Dead Cell: black</p>
                   <p>Day 1: Purple</p>
                   <p>Day 2: Yellow</p>
