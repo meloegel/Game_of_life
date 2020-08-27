@@ -25,9 +25,15 @@ h2 {
   font-size: 1.2rem;
   margin: 0 1rem 1rem 1rem;
 }
+h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 1rem auto;
+}
 h1 {
   color: white;
 }
+
 button {
   margin: auto;
   font-size: 1rem;
@@ -68,7 +74,7 @@ button {
   margin: auto;
 }
 .life {
-  background: green;
+  background: silver;
 }
 
 @keyframes App-logo-spin {
@@ -88,4 +94,38 @@ body {
   border: 1px solid white;
   border-radius: 2rem;
   padding: 1rem;
+}
+
+#zero {
+  background: black;
+}
+#one {
+  background: purple;
+}
+#two {
+  background: yellow;
+}
+#three {
+  background: red;
+}
+#four {
+  background: lightgreen;
+}
+#five {
+  background: orange;
+}
+#six {
+  background: pink;
+}
+#seven {
+  background: lightsalmon;
+}
+#eight {
+  background: lime;
+}
+#nine {
+  background: lightseagreen;
+}
+#ten {
+  background: lightskyblue;
 }

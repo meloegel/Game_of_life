@@ -48,7 +48,7 @@ function App() {
       <header className="App-header">
         <h1>Game Of Life</h1>
         <div id='controls'>
-          <Popup trigger={<button className="button"> Show Rules </button>} modal>
+          <Popup trigger={<button className="button"> Rules </button>} modal>
             {close => (
               <div className="modal">
                 <a className="close" onClick={close}>
@@ -56,9 +56,10 @@ function App() {
                  </a>
                 <div className="header"> Rules to Conway's Game Of Life </div>
                 <div className="content">
-                  <p>rules</p>
-                  <p>rules</p>
-                  <p>rules</p>
+                  <p>If a living cell has fewer than two neighbors it dies</p>
+                  <p>If a living cell has more than three neighbors it dies</p>
+                  <p>If a living cell has two or three neighbors it lives</p>
+                  <p>If a dead cell has three neighbors it lives</p>
                 </div>
                 <div className="actions">
                   <button
@@ -73,6 +74,7 @@ function App() {
               </div>
             )}
           </Popup>
+
           <button onClick={random}>Random Grid</button>
           <button onClick={togglePause}>{gameGrid.isRunning ? 'Pause' : 'Start'}</button>
           <button onClick={clearGrid}>Clear Grid</button>
@@ -81,6 +83,7 @@ function App() {
             <h2>{'Faster <-------> Slower'}</h2>
           </div>
         </div>
+        <h3>Generation: {gameGrid.generation}</h3>
         <Grid gameGrid={gameGrid} setGameGrid={setGameGrid} gridSize={gridSize} />
       </header>
     </div>
