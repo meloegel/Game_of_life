@@ -1,6 +1,6 @@
 const gridSize = 28
 
-const newGrid = (cellStatus = () => {
+const randomGrid = (cellStatus = () => {
     const cell = {
         currentStatus: Math.random() < 0.2,
         lifeCount: 0
@@ -17,4 +17,4 @@ const newGrid = (cellStatus = () => {
     }
     return grid
 }
-export default newGrid;
+export default randomGrid;

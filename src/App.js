@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import newGrid from './components/newGrid'
+import randomGrid from './components/randomGrid'
 import Grid from './components/grid'
 import gameOfLife from './components/gameOfLife'
 import timeLine from './components/timeLine'
@@ -11,14 +11,14 @@ const gridSize = 28
 
 function App() {
   const [gameGrid, setGameGrid] = useState({
-    gameGridStatus: newGrid(),
+    gameGridStatus: randomGrid(),
     generation: 0,
     isRunning: false,
-    rate: 100
+    rate: 10
   })
   function random(e) {
     e.preventDefault()
-    setGameGrid({ ...gameGrid, gameGridStatus: newGrid(), isRunning: false, generation: 0 })
+    setGameGrid({ ...gameGrid, gameGridStatus: randomGrid(), isRunning: false, generation: 0 })
   }
   function changeRate(newRate) {
     setGameGrid({ ...gameGrid, rate: newRate })
@@ -31,7 +31,7 @@ function App() {
   function clearGrid(e) {
     e.preventDefault()
     setGameGrid({
-      ...gameGrid, gameGridStatus: newGrid(() => {
+      ...gameGrid, gameGridStatus: randomGrid(() => {
         const cell = {
           currentStatus: false,
           lifeCount: 0
@@ -83,7 +83,7 @@ function App() {
                 <div className="header"> About Conway's Game Of Life </div>
                 <div className="about-content">
                   <p>The Game of Life (sometimes known simply as Life) is an example of a cellular automaton and a zero-player game. It takes place on an infinite two-dimensional grid in which cells can be ‘on’ (alive) or ‘off’ (dead), and is defined by a set of rules that jointly determine the state of a cell given the state of its neighbours. Following specification of an initial configuration, patterns evolve over time across the grid requiring no further user input (thus ‘zero-player’). First popularized in 1970 in the Scientific American (Gardner, 1970), the Game of Life has attracted lasting appeal among both scientific and amateur communities. One reason for its appeal is that it is very simple to program, yet at the same time it appears to exemplify emergent and self-organized behaviour. Even though its (simple) rules are specified at the level of individual cells, one sees entities at coarse-grained ‘higher’ levels of description, whose behaviors are better described by rules at these higher levels.
-</p>
+                  </p>
                   <p>Via Scholarpedia.org</p>
                 </div>
                 <div className="actions">
@@ -115,7 +115,7 @@ function App() {
                   <p>Day 4: Light Green</p>
                   <p>Day 5: Orange</p>
                   <p>Day 6: Pink</p>
-                  <p>Day 7: Light Slamon</p>
+                  <p>Day 7: Light Salmon</p>
                   <p>Day 8: Lime Green</p>
                   <p>Day 9: Sea Green</p>
                   <p>Day 10: Sky Blue</p>
