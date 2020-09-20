@@ -108,19 +108,77 @@ function App() {
                 <div className="header"> Colors of Game of Life </div>
                 <div className="color-content">
                   <p>The different colors represent the ammout of 'days/iterations' a cell has been alive</p>
-                  <p>Dead Cell: black</p>
+                  {/* <p>Dead Cell: black</p>
                   <p>Day 1: Purple</p>
                   <p>Day 2: Yellow</p>
-                  <p>Day 3: Red</p>
-                  <p>Day 4: Light Green</p>
+                  <p>Day 3: Red</p> */}
+                  {/* <p>Day 4: Light Green</p>
                   <p>Day 5: Orange</p>
                   <p>Day 6: Pink</p>
                   <p>Day 7: Light Salmon</p>
                   <p>Day 8: Lime Green</p>
                   <p>Day 9: Sea Green</p>
                   <p>Day 10: Sky Blue</p>
-                  <p>More Than 10 Days: Silver</p>
+                  <p>More Than 10 Days: Silver</p> */}
                 </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Day's Alive</th>
+                      <th>Color</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dead Cell</td>
+                      <td id='black'>Black</td>
+                    </tr>
+                    <tr>
+                      <td>Day 1:</td>
+                      <td id='purple'>Purple</td>
+                    </tr>
+                    <tr>
+                      <td>Day 2:</td>
+                      <td id='yellow'>Yellow</td>
+                    </tr>
+                    <tr>
+                      <td>Day 3:</td>
+                      <td id='red'>Red</td>
+                    </tr>
+                    <tr>
+                      <td>Day 4:</td>
+                      <td id='lightGreen'>Light Green</td>
+                    </tr>
+                    <tr>
+                      <td>Day 5:</td>
+                      <td id='orange'>Orange</td>
+                    </tr>
+                    <tr>
+                      <td>Day 6:</td>
+                      <td id='pink'>Pink</td>
+                    </tr>
+                    <tr>
+                      <td>Day 7:</td>
+                      <td id='lightSalmon'>Light Salmon</td>
+                    </tr>
+                    <tr>
+                      <td>Day 8:</td>
+                      <td id='limeGreen'>Lime Green</td>
+                    </tr>
+                    <tr>
+                      <td>Day 9:</td>
+                      <td id='seaGreen'>Sea Green</td>
+                    </tr>
+                    <tr>
+                      <td>Day 10:</td>
+                      <td id='skyBlue'>Sky Blue</td>
+                    </tr>
+                    <tr>
+                      <td>More Than 10 Days:</td>
+                      <td id='silver'>Silver</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <div className="actions">
                   <button
                     className="button"

@@ -142,3 +142,58 @@ body {
 .cell.life {
   background: white;
 }
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+#black {
+  background-color: black;
+  color: white;
+}
+#purple {
+  background-color: purple;
+  color: white;
+}
+#yellow {
+  background-color: yellow;
+}
+#red {
+  background-color: red;
+  color: white;
+}
+#lightGreen {
+  background-color: lightgreen;
+}
+#orange {
+  background-color: orange;
+}
+#pink {
+  background-color: pink;
+  color: white;
+}
+#lightSalmon {
+  background-color: lightsalmon;
+}
+#limeGreen {
+  background-color: lime;
+}
+#seaGreen {
+  background-color: seagreen;
+  color: white;
+}
+#skyBlue {
+  background-color: skyblue;
+}
+#silver {
+  background-color: silver;
+}
+td {
+  border-bottom: 0.1rem solid black;
+  border-left: 0.1rem solid black;
+}
+thead {
+  background-color: lightgray;
+}
+th {
+  border: 0.1rem solid black;
+}
