@@ -46,7 +46,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Game Of Life</h1>
+        <h1>Conway's Game Of Life</h1>
+        <h2>Created By: Mark Loegel</h2>
         <div id='controls'>
           <Popup trigger={<button className="button"> Rules </button>} modal>
             {close => (
@@ -54,12 +55,12 @@ function App() {
                 <a className="close" onClick={close}>
                   &times;
                  </a>
-                <div className="header"> Rules to Conway's Game Of Life </div>
-                <div className="content">
-                  <p>If a living cell has fewer than two neighbors it dies</p>
-                  <p>If a living cell has more than three neighbors it dies</p>
-                  <p>If a living cell has two or three neighbors it lives</p>
-                  <p>If a dead cell has three neighbors it lives</p>
+                <div className="rulesTitle"> Rules to Conway's Game Of Life </div>
+                <div className="rulesContent">
+                  <p className='rulesP'>If a living cell has fewer than two neighbors it dies</p>
+                  <p className='rulesP'>If a living cell has more than three neighbors it dies</p>
+                  <p className='rulesP'>If a living cell has two or three neighbors it lives</p>
+                  <p className='rulesP'>If a dead cell has three neighbors it lives</p>
                 </div>
                 <div className="actions">
                   <button
@@ -105,9 +106,9 @@ function App() {
                 <a className="close" onClick={close}>
                   &times;
                  </a>
-                <div className="header"> Colors of Game of Life </div>
+                <div className="colorsTitle"> Colors of Game of Life </div>
                 <div className="color-content">
-                  <p id='colorDescription'>The different colors represent the ammout of 'days/iterations' a cell has been alive</p>
+                  <p id='colorDescription'>The different colors represent the ammout of 'days' or 'iterations' a cell has been alive</p>
                 </div>
                 <table>
                   <thead>
@@ -191,6 +192,17 @@ function App() {
         <h3>Generation: {gameGrid.generation}</h3>
         <Grid gameGrid={gameGrid} setGameGrid={setGameGrid} gridSize={gridSize} />
       </header>
+      <footer>
+        <div className="contact">
+          <p>Created By: Mark Loegel</p>
+          <p>Email: Meloegel@gmail.com</p>
+          <p>Porfolio: <a href='#https://www.MarkLoegelsPortfolio.com/'>https://www.MarkLoegelsPortfolio.com/</a></p>
+          <p>LinkedIn: <a href='https://www.linkedin.com/in/mark-loegel-a43526b6/'>https://www.linkedin.com/in/mark-loegel-a43526b6/</a></p>
+          <p>Github: <a href='https://github.com/meloegel'>https://github.com/meloegel</a></p>
+          <p>Sourcerer.io: <a href='https://sourcerer.io/meloegel'>https://sourcerer.io/meloegel</a></p>
+          <p>Location: Madison Heights, Mi</p>
+        </div>
+      </footer>
     </div>
   );
 }

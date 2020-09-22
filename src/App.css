@@ -25,6 +25,7 @@
 h2 {
   font-size: 1.2rem;
   margin: 0 1rem 1rem 1rem;
+  color: white;
 }
 h3 {
   font-size: 1.5rem;
@@ -39,7 +40,7 @@ button {
   margin: auto;
   font-size: 1rem;
   border-radius: 1rem;
-  padding: 0.9rem;
+  padding: rem;
   height: 2.8rem;
   background: #282c34;
   color: white;
@@ -67,6 +68,15 @@ button {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+footer {
+  background-color: #282c34;
+  font-size: 1.2rem;
+}
+.contact {
+  padding: 1rem;
+  color: white;
+  border-top: 0.1rem dashed white;
 }
 
 .App-link {
@@ -198,8 +208,39 @@ th {
   border: 0.1rem solid black;
 }
 #colorDescription {
-  padding: 0.6rem;
+  font-size: 1.4rem;
+  background-color: lightgray;
+  width: 90%;
+  margin: 0.2rem auto;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+.colorsTitle {
+  font-size: 1.8rem;
+  background-color: lightgray;
+  width: 80%;
   margin: 0 auto;
-  width: 95%;
-  font-size: 1.6rem;
+  border-radius: 2.5rem;
+}
+:visited {
+  color: white;
+}
+
+.rulesTitle {
+  font-size: 1.8rem;
+  background-color: lightgray;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 2.5rem;
+}
+
+.rulesContent {
+  font-size: 1.4rem;
+  background-color: lightgray;
+  width: 90%;
+  margin: 0.2rem auto;
+  border-radius: 2rem;
+}
+.rulesP {
+  padding: 0.4rem;
 }
