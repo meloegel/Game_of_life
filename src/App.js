@@ -171,6 +171,7 @@ function App() {
                 <div className="actions">
                   <button
                     className="button"
+                    id='closeButton'
                     onClick={() => {
                       close();
                     }}
@@ -194,13 +195,13 @@ function App() {
       </header>
       <footer>
         <div className="contact">
-          <p>Created By: Mark Loegel</p>
-          <p>Email: Meloegel@gmail.com</p>
-          <p>Porfolio: <a href='#https://www.MarkLoegelsPortfolio.com/'>https://www.MarkLoegelsPortfolio.com/</a></p>
-          <p>LinkedIn: <a href='https://www.linkedin.com/in/mark-loegel-a43526b6/'>https://www.linkedin.com/in/mark-loegel-a43526b6/</a></p>
-          <p>Github: <a href='https://github.com/meloegel'>https://github.com/meloegel</a></p>
-          <p>Sourcerer.io: <a href='https://sourcerer.io/meloegel'>https://sourcerer.io/meloegel</a></p>
-          <p>Location: Madison Heights, Mi</p>
+          <p>Created By: <span>Mark Loegel</span></p>
+          <p>Email: <span>Meloegel@gmail.com</span></p>
+          <p>Porfolio: <a href='#https://www.MarkLoegelsPortfolio.com/'> <span>https://www.MarkLoegelsPortfolio.com/ </span></a></p>
+          <p>LinkedIn: <a href='https://www.linkedin.com/in/mark-loegel-a43526b6/'><span>https://www.linkedin.com/in/mark-loegel-a43526b6/</span></a></p>
+          <p>Github: <a href='https://github.com/meloegel'><span>https://github.com/meloegel</span></a></p>
+          <p>Sourcerer.io: <a href='https://sourcerer.io/meloegel'><span>https://sourcerer.io/meloegel</span></a></p>
+          <p>Location: <span> Madison Heights, Mi</span></p>
         </div>
       </footer>
     </div>
