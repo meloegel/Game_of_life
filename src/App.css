@@ -224,6 +224,9 @@ th {
 a {
   text-decoration: none;
 }
+a :hover {
+  color: blue;
+}
 
 .rulesTitle {
   font-size: 1.8rem;

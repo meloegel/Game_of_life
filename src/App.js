@@ -108,7 +108,7 @@ function App() {
                  </a>
                 <div className="colorsTitle"> Colors of Game of Life </div>
                 <div className="color-content">
-                  <p id='colorDescription'>The different colors represent the ammout of 'days' or 'iterations' a cell has been alive</p>
+                  <p id='colorDescription'>The different colors represent the ammout of 'days' or iterations a cell has been alive</p>
                 </div>
                 <table>
                   <thead>
@@ -198,10 +198,10 @@ function App() {
           <p>Created By: <span>Mark Loegel</span></p>
           <p>Email: <span>Meloegel@gmail.com</span></p>
           <p>Porfolio: <a href='#https://www.MarkLoegelsPortfolio.com/'> <span>https://www.MarkLoegelsPortfolio.com/ </span></a></p>
-          <p>LinkedIn: <a href='https://www.linkedin.com/in/mark-loegel-a43526b6/'><span>https://www.linkedin.com/in/mark-loegel-a43526b6/</span></a></p>
+          <p>LinkedIn: <a href='https://www.linkedin.com/in/mark-loegel/'><span>https://www.linkedin.com/in/mark-loegel</span></a></p>
           <p>Github: <a href='https://github.com/meloegel'><span>https://github.com/meloegel</span></a></p>
           <p>Sourcerer.io: <a href='https://sourcerer.io/meloegel'><span>https://sourcerer.io/meloegel</span></a></p>
-          <p>Location: <span> Madison Heights, Mi</span></p>
+          <p>Location: <a href='https://www.google.com/maps/place/Madison+Heights,+MI+48071/@42.4190452,-83.0849593,11.75z/data=!4m5!3m4!1s0x8824c560e64063fb:0xfe0210da6a27be1d!8m2!3d42.4858692!4d-83.1052028'><span> Madison Heights, Mi</span></a></p>
         </div>
       </footer>
     </div>
