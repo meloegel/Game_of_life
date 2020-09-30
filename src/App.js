@@ -197,7 +197,7 @@ function App() {
         <div className="contact">
           <p>Created By: <span>Mark Loegel</span></p>
           <p>Email: <span>Meloegel@gmail.com</span></p>
-          <p>Porfolio: <a href='#https://www.MarkLoegelsPortfolio.com/'> <span>https://www.MarkLoegelsPortfolio.com/ </span></a></p>
+          <p>Porfolio: <a href='https://www.MarkLoegelsPortfolio.com/'><span>https://www.MarkLoegelsPortfolio.com/</span></a></p>
           <p>LinkedIn: <a href='https://www.linkedin.com/in/mark-loegel/'><span>https://www.linkedin.com/in/mark-loegel</span></a></p>
           <p>Github: <a href='https://github.com/meloegel'><span>https://github.com/meloegel</span></a></p>
           <p>Sourcerer.io: <a href='https://sourcerer.io/meloegel'><span>https://sourcerer.io/meloegel</span></a></p>
