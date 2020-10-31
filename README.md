@@ -1,12 +1,34 @@
+# Game Of Life
+
+### Created By: Mark Loegel
+
+### Deployed Link: https://game-of-life-bice.vercel.app/
+
+## About
+
+This project was a build week project for Lambda school. It was the project for the end of my 5th month of school. I buildt the project over a week period and enjoyed the process.
+
+## Technologies Used
+
+- React <br>
+- ReactJs-Popus <br>
+- Number-to-Words <br>
+
+## Code Snippets
+
+### Here is the initialization of the game
+
+[<img src="./src/imgs/Game.PNG" width = "700" />]
+
+### Here is the initialization of the grid
+
+[<img src="./src/imgs/Grid.PNG" width = "700" />]
+
+### Here creates the random grid
+
+[<img src="./src/imgs/RandomGrid.PNG" width = "600" />]
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### Deployed Link
-
-Link: https://game-of-life-bice.vercel.app/
-
-### Created By
-
-Mark Loegel
 
 ## Available Scripts
 
