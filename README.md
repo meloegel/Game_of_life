@@ -18,15 +18,15 @@ This project was a build week project for Lambda school. It was the project for 
 
 ### Here is the initialization of the game
 
-[<img src="./src/imgs/Game.PNG" width = "700" />]
+<img src="./src/styles/imgs/Game.PNG" width = "700" />
 
 ### Here is the initialization of the grid
 
-[<img src="./src/imgs/Grid.PNG" width = "700" />]
+<img src="./src/styles/imgs/Grid.PNG" width = "700" />
 
 ### Here creates the random grid
 
-[<img src="./src/imgs/RandomGrid.PNG" width = "600" />]
+<img src="./src/styles/imgs/RandomGrid.PNG" width = "600" />
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

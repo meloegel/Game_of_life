@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import './styles/sass/index.scss';
 import randomGrid from './components/randomGrid'
 import Grid from './components/grid'
 import gameOfLife from './components/gameOfLife'
