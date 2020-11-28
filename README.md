@@ -6,7 +6,7 @@
 
 ## About
 
-This project was a build week project for Lambda school. It was the project for the end of my 5th month of school. I buildt the project over a week period and enjoyed the process.
+This project was a build week project for Lambda school. It was the project for the end of my 5th month of school. I built the project over a week period and enjoyed the process.
 
 ## Technologies Used
 
